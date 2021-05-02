@@ -179,6 +179,23 @@ const schema = {
         type: "string"
       }
     },
+    gender: {
+      type: "string",
+      title: "Gender",
+      anyOf: [
+        {
+          type: "string",
+          title: "Male",
+          enum: ["Male"]
+        },
+        {
+          type: "string",
+          title: "Female",
+          enum: ["Female"]
+        }
+      ]
+    },
+ 
     bio: {
       type: "string",
       title: "Bio"
@@ -195,6 +212,7 @@ const formData = {
   firstName: "Pijush",
   lastName: "Chakraborty",
   age: 25,
+  gender:"",
   bio: "I am full stack Mern dev",
 Experience: {
     Experience: "2+ year of xperience",
