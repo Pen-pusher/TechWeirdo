@@ -195,7 +195,10 @@ const schema = {
         }
       ]
     },
- 
+    isworking: {
+      type: "boolean",
+      title: "Are you working?"
+    },
     bio: {
       type: "string",
       title: "Bio"
@@ -213,6 +216,7 @@ const formData = {
   lastName: "Chakraborty",
   age: 25,
   gender:"",
+  isworking:"",
   bio: "I am full stack Mern dev",
 Experience: {
     Experience: "2+ year of xperience",
